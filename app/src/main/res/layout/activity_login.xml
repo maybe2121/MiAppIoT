@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFE7DC"
+    android:padding="24dp">
+
+    <!-- Logo centrado arriba -->
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/erizo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp" />
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_below="@id/imgLogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Iniciar Sesión"
+        android:textColor="#666064"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Campo usuario -->
+    <EditText
+        android:id="@+id/txtUsuario"
+        android:layout_below="@id/txtTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Usuario"
+        android:inputType="textEmailAddress"
+        android:backgroundTint="#BCA890"
+        android:textColor="#666064"
+        android:textColorHint="#A07E6A"
+        android:padding="12dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/edittext_bg" />
+
+    <!-- Campo contraseña -->
+    <EditText
+        android:id="@+id/txtClave"
+        android:layout_below="@id/txtUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:backgroundTint="#BCA890"
+        android:textColor="#666064"
+        android:textColorHint="#A07E6A"
+        android:padding="12dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/edittext_bg" />
+
+    <!-- Botón principal -->
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_below="@id/txtClave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Iniciar Sesión"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#BCA890"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Enlaces inferiores -->
+    <TextView
+        android:id="@+id/btnRecuperar"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recuperar Clave"
+        android:textColor="@color/link_selector"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="8dp" />
+
+    <TextView
+        android:id="@+id/btnRegistrar"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registrar Cuenta"
+        android:textColor="@color/link_selector"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="8dp" />
+
+
+
+</RelativeLayout>
